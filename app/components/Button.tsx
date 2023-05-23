@@ -14,7 +14,7 @@ interface ButtonProps{
 
 const Button: React.FC<ButtonProps> = ({type, fullWidth, children, onClick, secondary, danger, disabled}) => {
   return (
-    <button onClick={onclick} type={type} disabled={disabled}
+    <button onClick={onClick} type={type} disabled={disabled}
         className={clsx('btn-default', 
             disabled && 'opacity-50 cursor-default',
             fullWidth && 'w-full',

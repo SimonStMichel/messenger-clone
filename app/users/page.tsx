@@ -1,11 +1,12 @@
-'use client';
+// Components
+import EmptyState from '../components/EmptyState';
 
-import { signOut } from 'next-auth/react';
-
-const page = () => {
+const Users = () => {
   return (
-    <button onClick={() => signOut()}>Logout</button>
+      <div className='hidden h-full || lg:block lg:pl-80'>
+          <EmptyState />
+      </div>
   )
 }
 
-export default page;
+export default Users;
